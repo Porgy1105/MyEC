@@ -1,0 +1,28 @@
+﻿@using MyEC.Models.PartialContents
+@model ProductCard
+
+<style>
+    .demo-card-wide > .mdl-card__title {
+        color: #000;
+    }
+
+    .@(Model.ProductId)-img {
+        background: url("../image/@(Model.ImageUrl)") center / cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 300px;
+    }
+</style>
+
+<div class="mdl-card__title @(Model.ProductId)-img">
+    <h2 class="mdl-card__title-text">@Model.ProductName \ @Model.Price</h2>
+</div>
+<div class="mdl-card__supporting-text">
+    @Model.ProductDetail
+</div>
+<div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/Main/ProductDetail?ProductId=@Model.ProductId">
+        詳細
+    </a>
+</div>
