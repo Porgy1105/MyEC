@@ -14,5 +14,10 @@ namespace MyEC
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
+
+        protected void Application_Error(Object sender, EventArgs e)
+        {
+            var a = Server.GetLastError();
+        }
     }
 }

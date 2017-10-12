@@ -1,17 +1,18 @@
 ﻿#Contents {
-  padding: 10px; }
+  height: 100vh; }
 
-#HeaderContents div {
-  height: 600px;
-  background-color: aqua; }
+#HeaderContents {
+  height: 100px; }
+  #HeaderContents div {
+    background-color: aqua; }
 
 #MiddleContents div {
-  height: 500px;
-  background-color: aquamarine; }
+  background-color: antiquewhite; }
 
-#FotterContents div {
-  height: 200px;
-  background-color: brown; }
+#FotterContents {
+  height: 200px; }
+  #FotterContents div {
+    background-color: brown; }
 
 .fix-button {
   position: fixed;

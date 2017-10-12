@@ -1,20 +1,14 @@
 ﻿@using MyEC.Models
 @model Top
 
-<div id="HeaderContents" class="mdl-grid">
-    <div class="fixwidth mdl-cell mdl-cell--12-col">HeaderContents</div>
-</div>
-<div id="HeaderMiddleContents" class="mdl-grid">
+<div class="mdl-grid">
     <div class="mdl-cell mdl-cell--4-col">@Html.Partial("_ProductCard", Model.TopProductCard1)</div>
     <div class="mdl-cell mdl-cell--4-col">@Html.Partial("_ProductCard", Model.TopProductCard2)</div>
     <div class="mdl-cell mdl-cell--4-col">@Html.Partial("_ProductCard", Model.TopProductCard3)</div>
     @*<div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">@Html.Partial("_ProductCard", Model.TopProductCard3)</div>*@
 </div>
-<div id="MiddleContents" class="mdl-grid">
-    <div class="fixwidth mdl-cell mdl-cell--12-col">MiddleContents</div>
-</div>
-<div id="FotterContents" class="mdl-grid">
-    <div class="fixwidth mdl-cell mdl-cell--12-col">FotterContents</div>
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col">MiddleContents</div>
 </div>
 
 <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--fab mdl-button--colored fix-button">

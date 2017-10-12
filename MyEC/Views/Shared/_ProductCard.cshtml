@@ -16,7 +16,7 @@
 </style>
 
 <div class="mdl-card__title @(Model.ProductId)-img">
-    <h2 class="mdl-card__title-text">@Model.ProductName \ @Model.Price</h2>
+    <h2 class="mdl-card__title-text">@Model.ProductName @(Model.Price.ToString("#,##0"))円</h2>
 </div>
 <div class="mdl-card__supporting-text">
     @Model.ProductDetail
