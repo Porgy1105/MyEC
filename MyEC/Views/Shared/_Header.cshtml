@@ -1,3 +1,37 @@
-﻿<div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--12-col">HeaderContents</div>
+﻿@using MyEC.Models
+@model Base
+
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+        <a href="/">@Model.Title</a>
+    </div>
+    <div class="mdl-cell mdl-cell--9-col mdl-cell--4-col-tablet mdl-cell--2-col-phone menu">
+        <div class="menu-material">
+            <div class="menu-material-wrapper">
+                <button id="demo-menu-lower-right"
+                        class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                    for="demo-menu-lower-right">
+                    @foreach (var item in Model.HeaderLinkList)
+                    {
+                        <li class="mdl-menu__item">
+                            <a href="@item.Url">@item.Title</a>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+        <div class="menu-normal">
+            <ul class="header-nav">
+                @foreach (var item in Model.HeaderLinkList)
+            {
+                    <li>
+                        <a href="@item.Url">@item.Title</a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
 </div>

@@ -6,7 +6,7 @@ using System.Web;
 
 namespace MyEC.Models
 {
-    public class Top
+    public class Top:Base
     {
 
         public ProductCard TopProductCard1 { get; set; } = new ProductCard();

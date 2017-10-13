@@ -5,7 +5,7 @@ using System.Web;
 
 namespace MyEC.Models
 {
-    public class ProductDetail
+    public class ProductDetail : Base
     {
     }
 }

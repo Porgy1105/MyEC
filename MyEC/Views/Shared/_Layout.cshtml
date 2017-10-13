@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="~/css/base.css">
 </head>
 <body>
-    <div id="Contents" class="mdl-color--grey-100">
-        <div id="HeaderContents">
+    <div class="footer-fix-wrap">
+        <header>
             @Html.Partial("_Header")
-        </div>
-        <div id="MiddleContents">
+        </header>
+        <section class="main-contents">
             @RenderBody()
-        </div>
-        <div id="FotterContents">
+        </section>
+        <footer class="mdl-mega-footer">
             @Html.Partial("_Footer")
-        </div>
+        </footer>
     </div>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </body>
 </html>

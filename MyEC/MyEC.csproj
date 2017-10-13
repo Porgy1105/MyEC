@@ -106,6 +106,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Base.cs" />
+    <Compile Include="Models\Footer.cs" />
+    <Compile Include="Models\General\LinkParameter.cs" />
     <Compile Include="Models\PartialContents\ProductCard.cs" />
     <Compile Include="Models\ProductDetail.cs" />
     <Compile Include="Models\Top.cs" />

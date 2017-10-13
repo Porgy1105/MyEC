@@ -1,3 +1,21 @@
-﻿<div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--12-col">FotterContents</div>
+﻿@using MyEC.Models
+@model Base
+
+<div class="mdl-mega-footer__middle-section">
+    @foreach (var item in Model.FooterLinkList)
+    {
+        <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">@item.Title</h1>
+            <ul class="mdl-mega-footer__link-list">
+                @foreach (var child in item.LinkChildren)
+                {
+                    <li><a href="@child.Url">@child.Title</a></li>
+                }
+            </ul>
+        </div>
+    }
 </div>
+<section class="mdl-color--grey-800">
+    ©2017 MyEC
+</section>

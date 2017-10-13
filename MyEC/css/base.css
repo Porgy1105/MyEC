@@ -1,18 +1,65 @@
-﻿#Contents {
-  height: 100vh; }
+﻿@charset "UTF-8";
+body {
+  height: 100%;
+  background-color: #f5f5f5; }
 
-#HeaderContents {
-  height: 100px; }
-  #HeaderContents div {
-    background-color: aqua; }
+/* ------------------------------------------------------------
+    レイアウト関連
+   ------------------------------------------------------------ */
+.footer-fix-wrap {
+  position: relative;
+  min-height: 100%; }
 
-#MiddleContents div {
-  background-color: antiquewhite; }
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box; }
 
-#FotterContents {
-  height: 200px; }
-  #FotterContents div {
-    background-color: brown; }
+.main-contents {
+  padding-bottom: 210px; }
+
+/* ------------------------------------------------------------
+    メニュー関連
+   ------------------------------------------------------------ */
+.menu {
+  text-align: right; }
+  .menu .menu-material-wrapper {
+    box-sizing: border-box;
+    position: absolute;
+    right: 16px; }
+
+.header-nav {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .header-nav li {
+    padding: 0 19px;
+    display: inline-block; }
+    .header-nav li a {
+      font-size: 13px;
+      color: #363636;
+      text-decoration: none; }
+
+/* tablet より大きい */
+@media (min-width: 840px) {
+  .menu-material {
+    display: none; }
+  .menu-normal {
+    display: block; } }
+
+/* tablet 以下 */
+@media (max-width: 839px) {
+  .menu-material {
+    display: block; }
+  .menu-normal {
+    display: none; } }
+
+/* ------------------------------------------------------------
+    その他
+   ------------------------------------------------------------ */
+.demo-card-wide > .mdl-card__title {
+  color: #000; }
 
 .fix-button {
   position: fixed;
