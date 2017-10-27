@@ -1,7 +1,48 @@
-﻿
-@{
-    ViewBag.Title = "ProductDetail";
-}
+﻿@using MyEC.Models
+@model ProductDetail
 
-<h2>ProductDetail</h2>
+<section class="section section--safety section--rev">
+    <div class="aux">
+        <div class="grid grid--middle">
+            <div class="section__content grid__item palm--one-whole lap--one-half desk--one-half">
+                <header class="section__header">
+                    <h2 class="section__title">Keep track of shared&nbsp;expenses</h2>
+                    <p>Whether you’re splitting a bill, buying a group gift, or planning a trip with friends, requesting money with Google Wallet is an easy way to track who still needs to pay you back.</p>
+                    <p>You can also use Google Wallet for occasional commercial transactions, like collecting rent or accepting payments for services. Just make sure you have the <a href="https://wallet.google.com/n/settings?utm_source=wallet&amp;utm_medium=website&amp;utm_campaign=website-shared-expenses&amp;authuser=0" target="_blank">commercial payments setting</a> turned on. <a href="https://support.google.com/wallet/answer/6285485?hl=en" target="_blank">Learn&nbsp;more.</a></p>
+                    <p><a href="" class="basic-cta" data-g-label="" target="_blank"></a></p>
+                </header>
+            </div>
+            <!--
+            -->
+            <div class="section__image grid__item palm--one-whole lap--one-half desk--one-half">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source srcset="../image/scissors.jpeg" media="(min-width: 481px)">
+                    <source srcset="../image/scissors.jpeg" media="(max-width: 480px)">
+                    <!--[if IE 9]></video><![endif]-->
+                    <img srcset="../image/scissors.jpeg" alt="Keep your money safe">
+                </picture>
+            </div>
+        </div>
+    </div>
 
+    <div class="aux section__modules">
+        <div class="grid">
+            <div class="grid__item one-whole lap--one-half desk--one-half section__module">
+                <img src="../image/scissors.jpeg" alt="Data encryption">
+                <h4>Data encryption</h4>
+                <p>All your financial information in Google Wallet is encrypted and stored on Google’s protected servers in secure locations. If needed, you can quickly remove access to your account on any device at <a href="https://security.google.com/settings/security/activity" target="_blank">myaccount.google.com.</a></p>
+            </div>
+            <div class="grid__item one-whole lap--one-half desk--one-half section__module">
+                <img src="../image/scissors.jpeg" alt="Fraud protection">
+                <h4>Fraud protection</h4>
+                <p>Google Wallet comes with 24/7 fraud monitoring and covers 100% of all verified unauthorized transactions.</p>
+                <p class="cta-links">
+                    <a href="https://support.google.com/wallet/answer/3026245" data-g-label="Google Wallet Fraud Protection" target="_blank">Google Wallet Fraud Protection</a>
+                    <span class="divider">|</span>
+                    <a href="https://support.google.com/wallet/contact/unrecognized_charge" data-g-label="File a Claim" target="_blank">File a Claim</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
